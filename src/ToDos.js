@@ -11,11 +11,11 @@ class ToDos extends Component {
             <div className="todo">
                 <div className="todo-body">
                     <i className="far fa-times-circle todo-remove"></i>
-                    <div className="todo-content">
-                        <input type="text" className="form-control" value="Call Peter" />
-                    </div>
                     <div className="todo-priority">
-                        Important
+                        {this.props.priority}
+                    </div>
+                    <div className="todo-content">
+                        {this.props.content}
                     </div>
                 </div>
             </div>
